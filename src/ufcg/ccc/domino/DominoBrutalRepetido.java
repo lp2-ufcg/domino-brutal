@@ -1,5 +1,6 @@
 package ufcg.ccc.domino;
 
+import ufcg.ccc.domino.estrategia.EstrategiaDeJogo;
 import ufcg.ccc.domino.estrategia.EstrategiaInvalidaException;
 import ufcg.ccc.domino.estrategia.JogaPrimeiraPossivel;
 
@@ -13,8 +14,10 @@ public class DominoBrutalRepetido {
 	public static void main(String[] args) throws EstrategiaInvalidaException, JogadaInvalidaException {
 		int vitoriasJ1 = 0, vitoriasJ2 = 0, empates = 0;
 
+		EstrategiaDeJogo estrategia1 = new JogaPrimeiraPossivel(), estrategia2 = new JogaPrimeiraPossivel(); 
+		
 		for (int i = 0; i < 10000; i++) {
-			Jogo j = new Jogo("J1", new JogaPrimeiraPossivel(), "J2", new JogaPrimeiraPossivel(), 12);
+			Jogo j = new Jogo("J1", estrategia1, "J2", estrategia2, 12);
 			HistoricoDeJogo historico = j.jogaJogoCompleto();
 			if (historico.isEmpate()) {
 				empates++;

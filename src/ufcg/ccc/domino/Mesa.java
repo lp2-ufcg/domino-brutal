@@ -4,12 +4,20 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Mesa {
+/**
+ * A mesa que guarda as peças jogadas. A mesa tem um lado direito e um esquerdo.
+ * Carroções são jogados como as outras peças.
+ *
+ */
+public class Mesa implements VisaoDaMesa {
 
 	public static final int SEM_PECA = -1;
 
 	private Deque<Peca> pecas;
 
+	/**
+	 * Cria uma mesa vazia.
+	 */
 	public Mesa() {
 		this.pecas = new LinkedList<Peca>();
 	}
@@ -94,17 +102,22 @@ public class Mesa {
 					"Impossível jogar " + peca.toString() + " no lado esquerdo com " + getNumNaEsquerda() + " aberto");
 		}
 	}
-	
+
 	@Override
 	public String toString() {
-		if(pecas.size() == 1) {
+		if (pecas.size() == 1) {
 			return pecas.getFirst().toString();
 		}
-		
+
 		String o = "";
 		for (Peca peca : pecas) {
-			o = o + " " +  peca;
+			o = o + " " + peca;
 		}
 		return o;
+	}
+
+	@Override
+	public List<Peca> getPecasNaMesa() {
+		return new LinkedList<>(pecas);
 	}
 }

@@ -5,6 +5,8 @@ import java.util.List;
 
 import ufcg.ccc.domino.Jogada.TipoJogada;
 import ufcg.ccc.domino.estrategia.EstrategiaDeJogo;
+import ufcg.ccc.domino.estrategia.EstrategiaInvalidaException;
+import ufcg.ccc.domino.estrategia.VisaoDaMesa;
 
 /**
  * Encapsula as informações de um jogador em uma partida de dominó.

@@ -7,6 +7,7 @@ import java.util.Random;
 
 import ufcg.ccc.domino.Jogada.TipoJogada;
 import ufcg.ccc.domino.estrategia.EstrategiaDeJogo;
+import ufcg.ccc.domino.estrategia.EstrategiaInvalidaException;
 
 /**
  * Um jogo de dominó envolvendo 2 jogadores.

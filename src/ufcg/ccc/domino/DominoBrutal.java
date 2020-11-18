@@ -1,5 +1,6 @@
 package ufcg.ccc.domino;
 
+import ufcg.ccc.domino.estrategia.EstrategiaInvalidaException;
 import ufcg.ccc.domino.estrategia.JogaPrimeiraPossivel;
 
 /**
@@ -13,6 +14,7 @@ public class DominoBrutal {
 						  12);
 
 		HistoricoDeJogo historico;
+		
 		try {
 			historico = j.jogaJogoCompleto();
 			System.out.println(historico.toString());

@@ -1,6 +1,8 @@
-package ufcg.ccc.domino;
+package ufcg.ccc.domino.estrategia;
 
 import java.util.List;
+
+import ufcg.ccc.domino.Peca;
 
 /**
  * Essa interface define os métodos que implementações de EstrategiaDeJogo podem

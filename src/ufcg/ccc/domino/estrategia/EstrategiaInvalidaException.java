@@ -1,4 +1,4 @@
-package ufcg.ccc.domino;
+package ufcg.ccc.domino.estrategia;
 
 public class EstrategiaInvalidaException extends Exception {
 

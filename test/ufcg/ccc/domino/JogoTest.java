@@ -7,6 +7,7 @@ import java.util.Random;
 
 import org.junit.jupiter.api.Test;
 
+import ufcg.ccc.domino.estrategia.EstrategiaInvalidaException;
 import ufcg.ccc.domino.estrategia.JogaPrimeiraPossivel;
 
 class JogoTest {

@@ -4,6 +4,8 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
 
+import ufcg.ccc.domino.estrategia.VisaoDaMesa;
+
 /**
  * A mesa que guarda as peças jogadas. A mesa tem um lado direito e um esquerdo.
  * Carroções são jogados como as outras peças.

@@ -8,7 +8,9 @@ import org.junit.jupiter.api.Test;
 
 import ufcg.ccc.domino.Jogada.TipoJogada;
 import ufcg.ccc.domino.estrategia.EstrategiaDeJogo;
+import ufcg.ccc.domino.estrategia.EstrategiaInvalidaException;
 import ufcg.ccc.domino.estrategia.JogaPrimeiraPossivel;
+import ufcg.ccc.domino.estrategia.VisaoDaMesa;
 
 class JogadorTest {
 

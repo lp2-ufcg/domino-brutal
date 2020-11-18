@@ -8,7 +8,6 @@ import java.util.List;
 import ufcg.ccc.domino.Jogada;
 import ufcg.ccc.domino.Jogada.TipoJogada;
 import ufcg.ccc.domino.Peca;
-import ufcg.ccc.domino.VisaoDaMesa;
 
 /**
  * Joga sempre a primeira peça que encaixa. Tenta primeiro no lado direito e

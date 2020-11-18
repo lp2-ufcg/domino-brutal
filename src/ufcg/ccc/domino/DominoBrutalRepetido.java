@@ -1,5 +1,6 @@
 package ufcg.ccc.domino;
 
+import ufcg.ccc.domino.estrategia.EstrategiaInvalidaException;
 import ufcg.ccc.domino.estrategia.JogaPrimeiraPossivel;
 
 /**

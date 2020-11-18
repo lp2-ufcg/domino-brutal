@@ -4,7 +4,6 @@ import java.util.List;
 
 import ufcg.ccc.domino.Jogada;
 import ufcg.ccc.domino.Peca;
-import ufcg.ccc.domino.VisaoDaMesa;
 
 /**
  * Uma estratégia para jogar em uma partida de dominó. É usada pelo jogo para

@@ -14,10 +14,10 @@ public interface EstrategiaDeJogo {
 
 	/**
 	 * Decide a jogada na vez do jogador.
-	 * 
-	 * @param mesa O estado atual da mesa, com as peças já jogadas.
 	 * @param mao  As peças disponíveis para o jogador.
+	 * @param mesa O estado atual da mesa, com as peças já jogadas.
+	 * 
 	 * @return Uma Jogada
 	 */
-	public Jogada decideJogada(VisaoDaMesa mesa, List<Peca> mao);
+	public Jogada decideJogada(List<Peca> mao, VisaoDaMesa mesa);
 }

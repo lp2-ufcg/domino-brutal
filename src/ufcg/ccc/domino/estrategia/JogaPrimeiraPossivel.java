@@ -16,8 +16,7 @@ import ufcg.ccc.domino.Peca;
 public class JogaPrimeiraPossivel implements EstrategiaDeJogo {
 
 	@Override
-	public Jogada decideJogada(VisaoDaMesa mesa, List<Peca> mao) {
-
+	public Jogada decideJogada(List<Peca> mao, VisaoDaMesa mesa) {
 		if (mesa.getNumPecas() == 0) {
 			return new Jogada(mao.get(0), TipoJogada.NA_DIREITA);
 		}
@@ -34,4 +33,8 @@ public class JogaPrimeiraPossivel implements EstrategiaDeJogo {
 		return new Jogada();
 	}
 
+	@Override
+	public String toString() {
+		return "Joga Primeira Possível";
+	}
 }

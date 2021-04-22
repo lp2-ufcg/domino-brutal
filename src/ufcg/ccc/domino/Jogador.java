@@ -51,7 +51,7 @@ public class Jogador {
 	 *                                     que não está na mão do jogador.
 	 */
 	public Jogada decideJogada(VisaoDaMesa mesa) throws EstrategiaInvalidaException {
-		Jogada jogada = this.estrategia.decideJogada(mesa, mao);
+		Jogada jogada = this.estrategia.decideJogada(mao, mesa);
 
 		if (jogada.getTipo() != TipoJogada.PASSA) {
 			Peca pecaJogada = jogada.getPeca();

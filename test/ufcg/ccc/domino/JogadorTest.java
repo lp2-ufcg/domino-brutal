@@ -34,7 +34,7 @@ class JogadorTest {
 	void testEstrategiaComBug() throws Exception {
 		EstrategiaDeJogo errada = new EstrategiaDeJogo() {
 			@Override
-			public Jogada decideJogada(VisaoDaMesa mesa, List<Peca> mao) {
+			public Jogada decideJogada(List<Peca> mao, VisaoDaMesa mesa) {
 				return new Jogada(new Peca(6, 6), TipoJogada.NA_ESQUERDA);
 			}
 		};

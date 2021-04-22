@@ -27,7 +27,7 @@ class JogaPrimeiraPossivelTest {
 	void testPassa() {
 		JogaPrimeiraPossivel estrategia = new JogaPrimeiraPossivel();
 
-		Jogada j1 = estrategia.decideJogada(mesa, List.of(new Peca(3, 3), new Peca(0, 3)));
+		Jogada j1 = estrategia.decideJogada(List.of(new Peca(3, 3), new Peca(0, 3)), mesa);
 
 		assertEquals(TipoJogada.PASSA, j1.getTipo());
 	}
@@ -36,7 +36,7 @@ class JogaPrimeiraPossivelTest {
 	void testJogaPrimeira() {
 		JogaPrimeiraPossivel estrategia = new JogaPrimeiraPossivel();
 
-		Jogada j1 = estrategia.decideJogada(mesa, List.of(new Peca(3, 3), new Peca(0, 2), new Peca(2, 6)));
+		Jogada j1 = estrategia.decideJogada(List.of(new Peca(3, 3), new Peca(0, 2), new Peca(2, 6)), mesa);
 
 		assertEquals(TipoJogada.NA_DIREITA, j1.getTipo());
 		assertEquals(0, j1.getPeca().getNumEsquerdo());
@@ -47,7 +47,7 @@ class JogaPrimeiraPossivelTest {
 	void testPrefereDireita() {
 		JogaPrimeiraPossivel estrategia = new JogaPrimeiraPossivel();
 
-		Jogada j1 = estrategia.decideJogada(mesa, List.of(new Peca(3, 3), new Peca(2, 1), new Peca(2, 6)));
+		Jogada j1 = estrategia.decideJogada(List.of(new Peca(3, 3), new Peca(2, 1), new Peca(2, 6)), mesa);
 
 		assertEquals(TipoJogada.NA_DIREITA, j1.getTipo());
 		assertEquals(2, j1.getPeca().getNumEsquerdo());
@@ -58,7 +58,7 @@ class JogaPrimeiraPossivelTest {
 	void testJogaNaEsquerda() {
 		JogaPrimeiraPossivel estrategia = new JogaPrimeiraPossivel();
 
-		Jogada j1 = estrategia.decideJogada(mesa, List.of(new Peca(3, 3), new Peca(4, 4), new Peca(1, 6)));
+		Jogada j1 = estrategia.decideJogada(List.of(new Peca(3, 3), new Peca(4, 4), new Peca(1, 6)), mesa);
 
 		assertEquals(TipoJogada.NA_ESQUERDA, j1.getTipo());
 		assertEquals(1, j1.getPeca().getNumEsquerdo());
